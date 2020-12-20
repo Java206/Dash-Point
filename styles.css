@@ -63,7 +63,7 @@ body {
 
 .image-items-wrapper {
     display: grid;
-    grid-template-rows: 0fr 0fr 0fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .image-item-wrapper {
     position: relative;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>DashPoint AFH</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>  
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+
+                </div>
+
+                
+                <div class="right-side">
+                    <div class="Comapny-name">
+                        <div>Dash-Point AFH</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="image-items-wrapper">
+
+                    <div class="image-item-wrapper">
+                        <div class="images-img-background" style="background-image:url(img/DSC01186.JPG)"></div>
+                        <div class="img-text-wrapper">
+                            
+                            <div class="subtitle">
+                                Hi this my beautiful pictures
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="image-items-wrapper">
+
+                    <div class="image-item-wrapper">
+                        <div class="images-img-background" style="background-image:url(img/DSC01229.JPG)"></div>
+                        <div class="img-text-wrapper">
+                            
+                            <div class="subtitle">
+                                Hi this my beautiful pictures
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="image-items-wrapper">
+
+                    <div class="image-item-wrapper">
+                        <div class="images-img-background" style="background-image:url(img/DSC01384.JPG)"></div>
+                        <div class="img-text-wrapper">
+
+                            <div class="subtitle">
+                                Hi this my beautiful pictures
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        const imageItems = document.querySelectorAll('.image-item-wrapper')
+
+        imageItems.forEach(imageItem => {
+            imageItem.addEventListener('mouseover', () => {
+                imageItem.childNodes[1].classList.add('img-darken')
+            })
+            imageItem.addEventListener('mouseout', () => {
+                imageItem.childNodes[1].classList.remove('img-darken')
+            })
+        })
+    </script>
+</html>

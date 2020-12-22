@@ -63,7 +63,8 @@ body {
 
 .image-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr; */
 }
 .image-item-wrapper {
     position: relative;
@@ -105,6 +106,13 @@ body {
     filter: brightness(10%);
 }
 
+@media only screen and (min-width: 375px) {
+    .images-img-background {
+        padding-top: 30px;
+        width: 100%;
+    }
+}
+
 /* about page */
 .two-column-wrapper {
     display: grid;
@@ -112,7 +120,7 @@ body {
 }
 
 .images-img-background {
-    width: 100%;
+    max-width: 100%;
 }
 
 .profile-content-wrapper {
